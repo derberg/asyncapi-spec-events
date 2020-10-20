@@ -1,0 +1,14 @@
+asyncapi: 2.0.0
+info:
+  title: Dummy Events
+  version: 1.0.0
+  description: This service is in charge of processing dummy signups
+tags:
+  - name: user
+    description: User-related messages
+channels:
+  dummy::signups:
+    $ref: "./dummy/dummy-signup.yml"
+components:
+  messages:
+    $ref: "./dummy/schema.yml"

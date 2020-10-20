@@ -1,0 +1,28 @@
+DummySignup:
+  payload:
+    type: object
+    properties:
+      source:
+        type: string
+        description: origem do evento
+        example: dummy
+      eventType:
+        type: string
+        description: tipo do evento
+        example: transaction
+      eventCategory:
+        type: string
+        description: categoria do evento
+        example: authorization
+      timestamp:
+        type: string
+        format: date-time
+        description: Data de geração do evento
+        example: "2020-10-15T15:32:07.623528"
+      data:
+        type: object
+        properties:
+          dummyName:
+            type: string
+            description: Dummy name
+            example: Dummy Dum
