@@ -1,0 +1,5 @@
+subscribe:
+  operationId: dummy::signout
+  description: Dummy signout
+  message:
+    $ref: "schema.yml#/components/messages/DummySignout"

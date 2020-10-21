@@ -8,7 +8,11 @@ tags:
     description: User-related messages
 channels:
   dummy::signups:
-    $ref: "./dummy/dummy-signup.yml"
+    subscribe:
+      operationId: dummy::signup
+      description: Dummy signup
+      message:
+        $ref: "./dummy/schema.yml#/DummySignup"
 components:
   messages:
     $ref: "./dummy/schema.yml"
