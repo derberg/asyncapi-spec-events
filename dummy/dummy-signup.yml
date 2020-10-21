@@ -1,0 +1,5 @@
+subscribe:
+  operationId: transaction::authorization
+  description: teste
+  message:
+    $ref: "schema.yml#/components/messages/DummySignup"
