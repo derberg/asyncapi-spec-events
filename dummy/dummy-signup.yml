@@ -1,0 +1,7 @@
+subscribe:
+  operationId: dummy::signup
+  description: Dummy signup
+  message:
+    name: DummySignup
+    payload: 
+       $ref: "DummySignup-schema.yml"

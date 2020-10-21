@@ -8,11 +8,6 @@ tags:
     description: User-related messages
 channels:
   dummy::signups:
-    subscribe:
-      operationId: dummy::signup
-      description: Dummy signup
-      message:
-        $ref: "./dummy/schema.yml#/DummySignup"
-components:
-  messages:
-    $ref: "./dummy/schema.yml"
+    $ref: "./dummy/dummy-signup.yml"
+  dummy::signouts:
+    $ref: "./dummy/dummy-signout.yml"
