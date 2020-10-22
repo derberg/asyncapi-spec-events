@@ -2,4 +2,6 @@ subscribe:
   operationId: dummy::signout
   description: Dummy signout
   message:
-    $ref: "schema.yml#/DummySignout"
+    name: DummySignout
+    payload:
+      $ref: "DummySignout-schema.yml"
